@@ -6,9 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-# Ensure vite binary is executable
-RUN chmod +x node_modules/.bin/vite
-
 COPY . .
 RUN npm run build
 
